@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="icon" href="#.png">
+	<link rel="stylesheet" href="#.css"/>
+	<script src="#/#.js"></script>
+	
+	
+	
+	
+</head>
+<body onload="pRnd()">
+
+
+
+<button onclick="pRnd()">Play</button>
+<!-- Botão toca o sample até o final; inclusive, se durante o tocar apertamos o botão teremos dois tocando juntos -->	
+	
+	
+	<script>
+	
+		const aA = ["a.mp3","b.mp3",];
+		
+		function pRnd () {
+			const audioIndex = Math.floor(Math.random() * aA.length);
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}		
+	
+	</script>	
+</body>
+</html>
